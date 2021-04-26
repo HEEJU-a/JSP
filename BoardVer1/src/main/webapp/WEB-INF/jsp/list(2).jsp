@@ -40,7 +40,7 @@
 			</td>
 		</tr>
 		<% } %>
-	</table>
+		</table>
 	</div>
 	
 </body>
