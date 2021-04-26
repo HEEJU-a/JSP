@@ -19,6 +19,8 @@
 		</div>
 		<div>
 			<input type="submit" value="글쓰기">
+			<input type="reset" value="초기화">
+			
 		</div>
 		
 	</form>
