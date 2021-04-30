@@ -35,7 +35,7 @@ public class DBUtils {
 			try{ps.close();} catch(SQLException e) { e.printStackTrace();}
 		}
 		if(con != null) {
-			try{rs.close();} catch(SQLException e) { e.printStackTrace();}
+			try{con.close();} catch(SQLException e) { e.printStackTrace();}
 		}
 	}
 }
