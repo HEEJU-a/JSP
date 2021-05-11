@@ -50,7 +50,7 @@ public class UserDAO {
 			rs = ps.executeQuery();
 			
 			if(rs.next()) {
-				//아이디가 있는 경우
+				//아이디가 있는 경우&비밀번호 체크
 				String dbPw = rs.getString("upw");
 				if(dbPw.equals(param.getUpw())) {
 					return 1;
