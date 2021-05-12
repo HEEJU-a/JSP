@@ -22,7 +22,7 @@ public class MyUtils {
 	}
 	
 	public static int getParamInt(String key, HttpServletRequest req) {
-		String val = req.getParameter("key");
+		String val = req.getParameter(key);
 		int intVal = MyUtils.parseStringToInt(val);
 		//int intVal = parseStringToInt(val);
 		//->지금 parseStringToInt메소드는 같은 클래스에 있기
