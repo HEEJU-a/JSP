@@ -23,6 +23,7 @@ public class BoardDetailServlet extends HttpServlet {
 		request.setAttribute("data", data);
 		request.setAttribute("cmtList", CmtDAO.selCmtList(iboard));
 		MyUtils.openJSP("board/boardDetail", request, response);
+		
 	}
 
 
