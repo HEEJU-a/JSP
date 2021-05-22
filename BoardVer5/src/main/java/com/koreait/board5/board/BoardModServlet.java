@@ -29,8 +29,16 @@ public class BoardModServlet extends HttpServlet {
 			return;
 		}
 		
+		//uid가 pk일때
+		/*
+		if(!loginUser.getUid().equals(data.getUid())){
+			response.sendRedirect("list");
+			return;
+		*/
+		
 		MyUtils.openJSP("board/boardMod", request, response);
 	}
+	
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
