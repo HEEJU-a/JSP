@@ -34,7 +34,8 @@ public class UserMypageServlet extends HttpServlet {
 		System.out.println(uploadPath);
 		
 		MultipartRequest multi = new MultipartRequest(request, uploadPath + "/temp",maxFileSize
-				, "UTF-8", new DefaultFileRenamePolicy());// 파일정보들(요청들),어디에 저장할래, 세번째는 첨부파일 최대용량, 중복된 이름일때 파일명을 변경할수있도록 도와줌
+				, "UTF-8", new DefaultFileRenamePolicy());// 파일정보들(요청들),어디에 저장할래, 세번째는 첨부파일 최대용량, 
+		                                                         //중복된 이름일때 파일명을 변경할수있도록 도와줌
 		
 		//폴더 만들어야 하니까 session얻어오기!
 		int loginUserPk = MyUtils.getLoginUserPk(request);//->로그인 안하면 에러터짐
