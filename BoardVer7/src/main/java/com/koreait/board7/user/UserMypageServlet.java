@@ -28,7 +28,7 @@ public class UserMypageServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//String uploadPath = request.getRealPath("/res/img/temp");
 		
-		String uploadPath = request.getServletContext().getRealPath("/res/img");
+		String uploadPath = request.getServletContext().getRealPath("/res/img");// 실제 톰캣이 돌아가고 있는 위치값을 받아오는것
 		int maxFileSize = 10_485_760; // 10*1024*1024(10mb)
 		
 		System.out.println(uploadPath);
